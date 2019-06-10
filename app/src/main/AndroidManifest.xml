@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.xweather.android">
 
+    <!--通过网络接口来获取全国省市县数据的，因此必须要添加访问网络的权限-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="org.litepal.LitePalApplication"
         android:allowBackup="true"
